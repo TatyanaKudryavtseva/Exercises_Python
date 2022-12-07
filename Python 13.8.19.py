@@ -22,8 +22,8 @@ for i in range(len(age)):
         sum += 990
     else:
         sum += 1390
-    if ticket > 3:
-        sum = sum * 0.9
-    else:
-        pass
+if ticket > 3:
+    sum = sum * 0.9
+else:
+    pass
 print('Общая сумма к оплате:', sum, 'руб.')
