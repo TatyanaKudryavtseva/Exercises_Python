@@ -1,0 +1,19 @@
+The task is to create the following Telegram bot.
+
+1. The bot returns the price for a certain amount of currency (euro, dollar or ruble).
+2. When writing a bot, you need to use the pytelegrambotapi library.
+3. A person should send a message to the bot in the form of: <name of the currency the price of which he wants to find out> <name of the currency in which
+it is necessary to find out the price of the first currency> <quantity of the first currency>.
+4. When entering the /start or /help command, instructions for using the bot are displayed to the user.
+5. When entering the /values command, information about all available currencies should be displayed in a readable form.
+6. To take the exchange rate, you need to use the API and send requests to it using the Requests library.
+7. To parse the received responses, use the JSON library.
+8. If a user makes an error (for example, an incorrect or non-existent currency is entered or a number is entered incorrectly), 
+call the ApiException exception that is actually written with the error explanation text.
+9. The text of any error indicating the type of error should be sent to the user in messages.
+10. To send API requests, describe a class with a static get_price() method that takes three arguments:
+- the name of the currency to find out the price for — base,
+- the name of the currency, the price in which you need to find out, — quote,
+- the amount of the transferred currency is amount and returns the required amount in the currency.
+11. Store the telegram bot token in a special config (you can use a .py file).
+12. Hide all classes in a file extensions.py .
